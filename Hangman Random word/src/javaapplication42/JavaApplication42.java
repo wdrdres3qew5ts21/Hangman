@@ -6,7 +6,7 @@ public class JavaApplication42 {
     public static void main(String[] args) {
         // TODO code application logic here
         String word[]=new String[4];//เก็บศัพท์ได้ 10 คำ
-        word[0]="sophisticate";
+        word[0]="sophisticate";//เป็นตัวอย่างของฐานข้อมูลว่าจะสุ่มเลือกคำไหนมาดี
         word[1]="conclave";
         word[2]="inept";
         word[3]="wither";
@@ -20,13 +20,13 @@ public class JavaApplication42 {
         //ถ้าคำมากกว่า 10 ตัดเหลือ 4 ตัวอักษร
         //เริ่มการสุ่มมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมมม
         if(word[randomWord ].length()>=10){//เข้า if มาเช็คความยาวตัวอักษรด้วย .length()          
-            int keepWordAtPosition1;
+            int keepWordAtPosition1;//เราประกาศตัวแปลไว้ใช้ในการสุ่มเก้บค่าตำแหน่งเลขจนกว่าโปรแกรมจะวน loop true แล้วเช็คว่าเลขไม่ซ้ำกันเลย
             int keepWordAtPosition2;
             int keepWordAtPosition3;
             int keepWordAtPosition4;
             int arrayDistinctPosition[]=new int[4];//สร้าง array มาเก้บตำแหน่งข้างบน
             while(true){
-                keepWordAtPosition1=(int)(Math.random()*(wordLength-1+0+1))+0;
+                keepWordAtPosition1=(int)(Math.random()*(wordLength-1+0+1))+0;//สุ่มำแหน่งของตัวอักษรที่จะล็อคเอาไว้
                 keepWordAtPosition2=(int)(Math.random()*(wordLength-1+0+1))+0;
                 keepWordAtPosition3=(int)(Math.random()*(wordLength-1+0+1))+0;
                 keepWordAtPosition4=(int)(Math.random()*(wordLength-1+0+1))+0;
